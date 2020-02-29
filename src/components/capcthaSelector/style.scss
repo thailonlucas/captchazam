@@ -131,10 +131,16 @@ $SECONDARY-COLOR: #00AAFF;
             align-items: center;
             justify-content: center;
             width: 46px;
+            transition: 500ms;
 
             h1{
                 font-size: 14px
             }
+        }
+
+        .send.loading{
+            background-color: rgba(40,40,40,0.4);
+            transition: 500ms;
         }
 
         .send:active{

@@ -41,7 +41,7 @@ const CaptchaSelector = props => {
             </main>
             <footer>
                 {children}
-               <div className='send'onClick={onSendHandle}><h1>{loading ? "Aguarde" : "Enviar"}</h1></div>
+               <div className={loading ? 'send loading' : 'send'} onClick={onSendHandle}><h1>{loading ? "Aguarde" : "Enviar"}</h1></div>
             </footer>
         </div>
     )
