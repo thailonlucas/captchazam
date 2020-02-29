@@ -1,0 +1,39 @@
+.target-view{
+    color: #fff;
+    padding: 32px;
+    
+
+    h1{
+        font-size: 1em;
+        margin: 0;
+    }
+
+    h2{
+        font-size: 0.8em;
+        font-weight: 100;
+        margin: 0;
+        margin-top: 4px;
+    }
+
+    .target-container{
+        height: 3px;
+        position: relative;
+        margin-top: 16px;
+        background-color: rgba($color: #fff, $alpha: .2);
+        border-radius: 3px;
+        overflow: hidden;
+        
+        .view{
+            height: 3px;
+            background: linear-gradient(47deg, #fe00ff, #7a4fd2, #06bad7, #bbea00, #ead000);
+            background-size: 1000% 1000%;
+            animation: AnimationName 20s ease infinite;
+        }
+    }
+}
+
+@keyframes AnimationName {
+    0%{background-position:97% 0%}
+    50%{background-position:4% 100%}
+    100%{background-position:97% 0%}
+}
